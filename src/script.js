@@ -11,7 +11,7 @@ let state; // 状態を表すクラス
 let flag; // タッチ操作などの検出に使うフラグのクラスを入れる箱
 let i, j, k;
 
-// actSequence使って大幅に書き直し
+// actSequence使って大幅に書き直し→中止。別のやり方にする。
 
 function preload(){
   let imageNames = ['title', 'select', 'play', 'treasure'];
@@ -34,6 +34,7 @@ function setup(){
 function draw(){
   // 面倒だからなんか背景作ってここに書けばいい、共通のものはここでいいよね。
   state.update(); // stateにやらせる！
+  // state.draw(); // って書いて処理を分けるべき
 }
 
 
